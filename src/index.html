@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<style>
+  .card1{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+</style>
+
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="w-[100%] h-[80px] bg-[#F2F0F1] px-[25px] flex justify-between items-center">
+        <div class="nav_left w-auto h-[100%] flex justify-start items-center"><img src="./photo/logo.svg" alt=""></div>
+        <div class="w-auto h-[100%] nav_center hidden md:flex justify-center items-center gap-[40px] text-[20px]">
+            <div class="">Shop</div>
+            <div class="">On Sale</div>
+            <div class="">New Arrivals</div>
+            <div class="">Brands</div>
+        </div>
+        <div class="nav_right w-auto h-[100%] flex justify-center items-center text-[30px] sm:text-[25px] gap-[25px]">
+               <div class=""><i class="ri-user-line hidden sm:flex"></i></div>
+               <div class=""><i class="ri-shopping-cart-line hidden sm:flex"></i></div>
+               <div class="menu_icon flex md:hidden"><i class="ri-menu-line"></i></div>
+        </div>
+    </div>
+    
+    <!-- sidenav bar -->
+     <div class="w-full h-auto side_nav">
+
+      <div class="w-full h-auto flex justify-center items-center py-[10px] text-[17px] border-t-2 border-b-2 border-black hover:text-white hover:bg-black">Shop</div>
+      <div class="w-full h-auto flex justify-center items-center py-[10px] text-[17px] border-b-2 border-black hover:text-white hover:bg-black">On Sale</div>
+      <div class="w-full h-auto flex justify-center items-center py-[10px] text-[17px] border-b-2 border-black hover:text-white hover:bg-black">New Arrivals</div>
+      <div class="w-full h-auto flex justify-center items-center py-[10px] text-[17px] border-b-2 border-black hover:text-white hover:bg-black">Brands</div>
+
+     </div>
+    <!-- sidenav bar -->
+    
+    <!-- Navigation Bar -->
+
+    <!-- Hero Sectioin  -->
+    <div class="w-full h-[100vh] sm:h-[50vh] md:h-[50vh] lg:h-[80vh] flex flex-col sm:flex-row bg-[#F2F0F1]">
+        <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%]  flex justify-center items-center order-2 sm:order-1">
+         
+          <div class="w-[100%] h-[100%]  flex flex-col justify-center items-start pl-[20px] gap-[20px]">
+            
+            <div class="text-[30px] lg:text-[40px] font-extrabold">
+              <span class="block h-[33px] lg:h-[43px]">FIND CLOTHES</span>
+              <span class="block h-[33px] lg:h-[43px]">THAT MATCHES</span>
+              <span class="block h-[33px] lg:h-[43px]">YOUR STYLE</span>
+            </div>
+
+            <div class="lg:text-xl">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</div>
+
+            <div class="text-white bg-black w-[150px] h-[37px] rounded-[50px] flex justify-center items-center border-2 border-transparent hover:bg-transparent hover:border-black hover:text-black">Shop Now</div>
+
+            <div class="w-full h-[100px] hidden lg:flex justify-center items-center gap-[20px]">
+            
+              <div class="w-[150px] h-[100%] flex flex-col justify-center items-center">
+                <div style="line-height: 35px;" class="w-full text-[38px] font-extrabold text-center">200+</div>
+                <div class="text-[14px]">International Brands</div>
+              </div>
+              <div class="w-[150px] h-[100%] flex flex-col justify-center items-center">
+                <div style="line-height: 35px;" class="w-full text-[38px] font-extrabold text-center">2,000+</div>
+                <div class="text-[14px]">High-Quality Products</div>
+              </div>
+              <div class="w-[150px] h-[100%] flex flex-col justify-center items-center">
+                <div style="line-height: 35px;" class="w-full text-[38px] font-extrabold text-center">30,000+</div>
+                <div class="text-[14px]">Happy Customers</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%] flex justify-center items-center order-1 sm:order-2">
+               <img src="./photo/hero_section.svg" class="w-[100%] h-[100%]" alt="">
+        </div>
+      </div>
+    <!-- Hero Sectioin  -->
+
+    <!-- Section 1 -->
+     <div class="w-full h-auto bg-black flex justify-center items-center gap-[20px] flex-wrap">
+      <div class="w-[210px] h-[110px] bg-black flex justify-center items-center"><img src="./photo/icon1.svg" alt=""></div>
+      <div class="w-[210px] h-[110px] bg-black flex justify-center items-center"><img src="./photo/icon2.svg" alt=""></div>
+      <div class="w-[210px] h-[110px] bg-black flex justify-center items-center"><img src="./photo/icon3.svg" alt=""></div>
+      <div class="w-[210px] h-[110px] bg-black flex justify-center items-center"><img src="./photo/icon4.svg" alt=""></div>
+      <div class="w-[210px] h-[110px] bg-black flex justify-center items-center"><img src="./photo/icon5.svg" alt=""></div>
+     </div>
+    <!-- Section 1-->
+
+    <!-- Section 2 -->
+       <div class="w-full h-auto py-[5px] text-[30px] sm:text-[40px] font-bold flex justify-center items-center my-[10px]">
+        NEW ARRIVALS
+       </div>
+       <!-- Section 2 -->
+       
+       <!-- Section 3 -->
+       <div class="w-full h-auto flex justify-center items-center gap-[25px_30px] flex-wrap p-[10px]">
+         <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+        <div class="w-auto h-[60%] pt-[20px] flex justify-center items-center"><img src="./photo/item_1.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+        <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+          <div class="text-[17px] font-bold">T-SHIRT WITH TAPE DETAILS</div>
+          <div class="flex gap-[20px] justify-center items-center">
+            <div class="text-[#FFC633] text-[19px]">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+            </div>
+            <div class="text-[19px]">4.5/5</div>
+          </div>
+          <div class="text-xl font-semibold">$120</div>
+        </div>
+      </div>
+      <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+        <div class="w-auto h-[60%] flex justify-center items-center"><img src="./photo/item_2.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+        <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+          <div class="text-[17px] font-bold">SKINNY FIT JEANS</div>
+          <div class="flex gap-[20px] justify-center items-center">
+            <div class="text-[#FFC633] text-[19px]">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+            </div>
+            <div class="text-[19px]">4.5/5</div>
+          </div>
+          <div class="text-xl font-semibold">$240</div>
+        </div>
+      </div>
+      <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+        <div class="w-auto h-[60%] flex justify-center items-center"><img src="./photo/item_3.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+        <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+          <div class="text-[17px] font-bold">CHECKERED SHIRT</div>
+          <div class="flex gap-[20px] justify-center items-center">
+            <div class="text-[#FFC633] text-[19px]">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+            </div>
+            <div class="text-[19px]">4.5/5</div>
+          </div>
+          <div class="text-xl font-semibold">$180</div>
+        </div>
+      </div>
+      <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+        <div class="w-auto h-[60%] flex justify-center items-center"><img src="./photo/item_4.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+        <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+          <div class="text-[17px] font-bold">SLEEVE STRIPED T-SHIRT</div>
+          <div class="flex gap-[20px] justify-center items-center">
+            <div class="text-[#FFC633] text-[19px]">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+            </div>
+            <div class="text-[19px]">4.5/5</div>
+          </div>
+          <div class="text-xl font-semibold">$130</div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 -->
+    
+    <!-- Section 4 -->
+    <div class="w-full h-auto py-[5px] text-[30px] sm:text-[40px] font-bold flex justify-center items-center my-[10px]">
+      Top Selling
+    </div>
+    <!-- Section 4 -->
+    
+
+    <!-- Section 5 -->
+    <div class="w-full h-auto flex justify-center items-center gap-[25px_30px] flex-wrap p-[10px]">
+      <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+     <div class="w-auto h-[60%] -pt-[20px] flex justify-center items-center"><img src="./photo/item_5.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+     <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+       <div class="text-[17px] font-bold">VERTICAL STRIPED SHIRT</div>
+       <div class="flex gap-[20px] justify-center items-center">
+         <div class="text-[#FFC633] text-[19px]">
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-half-line"></i>
+         </div>
+         <div class="text-[19px]">4.5/5</div>
+       </div>
+       <div class="text-xl font-semibold">$212</div>
+     </div>
+   </div>
+   <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+     <div class="w-auto h-[60%] flex justify-center items-center"><img src="./photo/item_6.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+     <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+       <div class="text-[17px] font-bold">COURAGE GRAPHIC T-SHIRT</div>
+       <div class="flex gap-[20px] justify-center items-center">
+         <div class="text-[#FFC633] text-[19px]">
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-half-line"></i>
+         </div>
+         <div class="text-[19px]">4.5/5</div>
+       </div>
+       <div class="text-xl font-semibold">$145</div>
+     </div>
+   </div>
+   <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+     <div class="w-auto h-[60%] flex justify-center items-center"><img src="./photo/item_7.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+     <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+       <div class="text-[17px] font-bold">LOOSE FIT BERMUDA SHORTS</div>
+       <div class="flex gap-[20px] justify-center items-center">
+         <div class="text-[#FFC633] text-[19px]">
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-half-line"></i>
+         </div>
+         <div class="text-[19px]">4.5/5</div>
+       </div>
+       <div class="text-xl font-semibold">$80</div>
+     </div>
+   </div>
+   <div class="card1 w-[250px] h-[400px] rounded-[30px]  flex flex-col justify-center items-start px-[20px] gap-[10px]">
+     <div class="w-auto h-[60%] flex justify-center items-center"><img src="./photo/item_8.svg" class="w-auto h-[100%] flex justify-center items-center" alt=""></div>
+     <div class="w-full h-auto flex flex-col justify-center items-start pl-[10px] pb-[10px]">
+       <div class="text-[17px] font-bold">FADED SKINNY JEANS</div>
+       <div class="flex gap-[20px] justify-center items-center">
+         <div class="text-[#FFC633] text-[19px]">
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-fill"></i>
+           <i class="ri-star-half-line"></i>
+         </div>
+         <div class="text-[19px]">4.5/5</div>
+       </div>
+       <div class="text-xl font-semibold">$210</div>
+     </div>
+   </div>
+ </div>
+    <!-- Section 5 -->
+
+    <!-- Section 6 -->
+     <div class="w-[90%] lg:w-[80%]  m-auto h-auto bg-[#F0F0F0] py-[10px] my-[20px] flex justify-center items-center rounded-[30px] gap-[20px_10px] flex-wrap px-[10px]">
+
+      <div class="w-[400px] h-[200px] "><img src="./photo/collection1.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[400px] h-auto "><img src="./photo/collection2.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[400px] h-auto "><img src="./photo/collection3.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[400px] h-[200px] "><img src="./photo/collection4.svg" class="w-[100%] h-[100%]" alt=""></div>
+
+     </div>
+    <!-- Section 6 -->
+
+
+    <!-- Section 7 -->
+    <div class="w-full h-auto m-auto text-center py-[5px] text-[30px] sm:text-[40px] font-bold flex justify-center items-center my-[10px]">
+      OUR HAPPY CUSTOMERS
+    </div>
+    <!-- Section 7 -->
+
+    <!-- Section 8 -->
+     <div class="w-full h-auto  flex justify-center items-center flex-wrap gap-[30px] my-[20px] px-[10px]">
+  
+        <div class="card1 w-[300px] h-[210px] flex flex-col justify-center items-center px-[10px] rounded-[20px]">
+          <div class="text-[#FFC633] text-[19px] flex flex-row">
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-half-line"></i></div>
+          </div>
+          <div class="flex justify-center items-center gap-[10px]">
+            <div class="text-[20px] font-bold">Sarah M.</div>
+            <div class=""><img src="./photo/Frame.svg" alt=""></div>
+          </div>
+          <div class="text-center">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+          </div>
+        </div>
+
+        <div class="card1 w-[300px] h-[210px] flex flex-col justify-center items-center px-[10px] rounded-[20px]">
+          <div class="text-[#FFC633] text-[19px] flex flex-row">
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-half-line"></i></div>
+          </div>
+          <div class="flex justify-center items-center gap-[10px]">
+            <div class="text-[20px] font-bold">Alex K.</div>
+            <div class=""><img src="./photo/Frame.svg" alt=""></div>
+          </div>
+          <div class="text-center">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+          </div>
+        </div>
+
+        <div class="card1 w-[300px] h-[210px] flex flex-col justify-center items-center px-[10px] rounded-[20px]">
+          <div class="text-[#FFC633] text-[19px] flex flex-row">
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-fill"></i></div>
+            <div class=""><i class="ri-star-half-line"></i></div>
+          </div>
+          <div class="flex justify-center items-center gap-[10px]">
+            <div class="text-[20px] font-bold">James L.</div>
+            <div class=""><img src="./photo/Frame.svg" alt=""></div>
+          </div>
+          <div class="text-center">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+          </div>
+        </div>
+     </div>
+    <!-- Section 8 -->
+
+    <!-- Section 9 -->
+    <div class="w-[80%] h-auto py-[30px] bg-black flex m-auto rounded-[30px] justify-center items-center gap-[15px_30px] flex-wrap">
+      <div class="w-[310px] h-[100%] text-white flex justify-center items-center">
+        <div class="text-[20px] sm:text-[25px] font-bold">
+          <div class="text-center">STAY UPTO DATE ABOUT</div>
+          <div class="text-center">OUR LATEST OFFERS</div>
+        </div>
+      </div>
+      <div class="w-[300px] h-[100%]  flex justify-center items-center flex-col gap-[10px]">
+        <div class="w-auto bg-white p-[0px_20px] rounded-[20px] flex justify-center items-center"><span><i class="ri-mail-line text-[23px]"></i></span><input type="text" class="outline-none border-none h-[30px] placeholder:pl-[10px] placeholder:text-[15px]" placeholder="Enter your email address"></div>
+        <div class="w-auto p-[5px_20px] rounded-[20px] bg-white mb-[10px]">Subscribe to Newsletter</div>
+      </div>
+    </div>
+    <!-- Section 9 -->
+
+    <!-- Section 10  -->
+     <div class="w-full h-auto flex justify-center items-center gap-[20px_30px] mt-[40px] flex-wrap px-[10px]">
+     
+      <div class="w-[250px] h-[200px] flex flex-col  gap-[10px] space-y-2">
+        <div class=""><img src="./photo/logo.svg" alt=""></div>
+        <div class="">We have clothes that suits your style and which you’re proud to wear. From women to men.</div>
+        <div class="flex justify-start items-center gap-[10px]">
+          <div class=""><img src="./photo/1.svg" alt=""></div>
+          <div class=""><img src="./photo/2.svg" alt=""></div>
+          <div class=""><img src="./photo/3.svg" alt=""></div>
+          <div class=""><img src="./photo/4.svg" alt=""></div>
+        </div>
+
+      </div>
+
+      <div class="w-[250px] h-[200px] space-y-2">
+        <div class="text-[22px] font-bold">Company</div>
+        <div class="text-[18px]">About</div>
+        <div class="text-[18px]">Features</div>
+        <div class="text-[18px]">Works</div>
+        <div class="text-[18px]">Career</div>
+      </div>
+
+
+      <div class="w-[250px] h-[200px] space-y-2">
+        <div class="text-[22px] font-bold">Help</div>
+        <div class="text-[18px]">Customer Support</div>
+        <div class="text-[18px]">Delivery Details</div>
+        <div class="text-[18px]">Terms & Conditions</div>
+        <div class="text-[18px]">Privacy Policy</div>
+      </div>
+
+
+      <div class="w-[250px] h-[200px] space-y-2">
+        <div class="text-[22px] font-bold">FAQ</div>
+        <div class="text-[18px]">Account</div>
+        <div class="text-[18px]">Manage Deliveries</div>
+        <div class="text-[18px]">Orders</div>
+        <div class="text-[18px]">Payments</div>
+      </div>
+
+      <div class="w-[250px] h-[200px] space-y-2">
+        <div class="text-[22px] font-bold">Resources</div>
+        <div class="text-[18px]">Free eBooks</div>
+        <div class="text-[18px]">Development Tutorial</div>
+        <div class="text-[18px]">How to - Blog</div>
+        <div class="text-[18px]">Youtube Playlist</div>
+      </div>
+     </div>
+    <!-- Section 10  -->
+  </body>
+
+  <script>
+
+  jQuery.noConflict();
+  jQuery(document).ready(function($){
+
+     $(".side_nav").hide();
+
+     $(".ri-menu-line").click(function(){
+       $(".side_nav").slideToggle(400);
+     })
+
+  })
+
+  </script>
+
+  </html>
